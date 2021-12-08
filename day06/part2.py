@@ -2,15 +2,6 @@
 
 import sys
 
-from multiprocessing import Process
-
-class Fish:
-    def __init__(self,current=8):
-        self.current = current
-    def decrement(self):
-        self.current -= 1
-        if self.current < 0:
-            raise Exception("Fish out of bounds")
     
 def fish_two(days, inputs):
     fish_timers = {}
